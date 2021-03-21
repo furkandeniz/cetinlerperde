@@ -12,8 +12,7 @@ require __DIR__ . '/model.php';
 require __DIR__ . '/controller.php';
 require __DIR__. '/route.php';
 
-Route::run('/uyeler', 'uyeler@index');
-Route::run('/uye/{url}', 'uyeler@deneme');
+
 Route::run('/login', 'admin/login@index');
 Route::run('/login', 'admin/login@post', 'post' );
 Route::run('/admin', 'admin/home@index');
