@@ -9,11 +9,11 @@
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="Assets/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../../Assets/plugins/fontawesome-free/css/all.min.css">
     <!-- icheck bootstrap -->
-    <link rel="stylesheet" href="Assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <link rel="stylesheet" href="../../Assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="Assets/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="../../Assets/dist/css/adminlte.min.css">
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
@@ -70,11 +70,11 @@
 <!-- /.login-box -->
 
 <!-- jQuery -->
-<script src="Assets/plugins/jquery/jquery.min.js"></script>
+<script src="../../Assets/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
-<script src="Assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../../Assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
-<script src="Assets/dist/js/adminlte.min.js"></script>
+<script src="../../Assets/dist/js/adminlte.min.js"></script>
 </body>
 </html>
 <?php }else{

@@ -1,5 +1,5 @@
 <?php if($_SESSION['user']){ ?>
-    <?php include 'header.php'?>
+ <?php include 'header.php'?>
         <div class="content-wrapper">
 
             <div class="content-header">
@@ -91,10 +91,7 @@
                     <!-- /.card -->
                 </div>
             </div>
-                    </div>
 
-                </div>
-            </div>
 
         </div>
 
@@ -102,4 +99,4 @@
 <?php }else{
     header('Location: /login');
 }
-    ?>
+?>

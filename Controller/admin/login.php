@@ -15,7 +15,7 @@ class login extends Controller {
     public function post() {
         if(isset($_POST)) {
             $email = $_POST['email'];
-            $password = $_POST['password'];
+            $password = md5($_POST['password']);
             $userModel = $this->model('users');
             $user = $userModel->get($email);
             if($email == $user['email'] && $password == $user['password']) {
