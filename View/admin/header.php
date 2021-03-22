@@ -72,7 +72,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                          with font-awesome or any other icon font library -->
                     <li class="nav-item menu-open">
                         <a href="#" class="nav-link active">
-                            <i class="nav-icon fas fa-tachometer-alt"></i>
+                            <i class="nav-icon fas fa-user"></i>
                             <p>
                                 Kullanıcı İşlemleri
                                 <i class="right fas fa-angle-left"></i>
@@ -81,13 +81,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
                                 <a href="#" class="nav-link active">
-                                    <i class="far fa-circle nav-icon"></i>
+                                    <i class="fas fa-user-plus nav-icon"></i>
                                     <p>Ekle</p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
+                                    <i class="fas fa-user-edit nav-icon"></i>
                                     <p>Düzenle</p>
                                 </a>
                             </li>
