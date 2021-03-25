@@ -35,3 +35,5 @@ Route::run('/categoryupdate', 'admin/category@update', 'post');
 
 // Ürün Sayfaları
 Route::run('/productadd', 'admin/product@add');
+Route::run('/productcreate', 'admin/product@create', 'post');
+Route::run('/productlist', 'admin/product@list');
