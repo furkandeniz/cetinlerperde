@@ -54,12 +54,13 @@
                         <a href="#" class="d-block"><?= $_SESSION['user']?></a>
                     </div>
                 </div>
+                <!-- Sidebar Menu -->
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                              with font-awesome or any other icon font library -->
-                        <li class="nav-item menu-open">
-                            <a href="#" class="nav-link active">
+                        <li class="nav-item menu-close">
+                            <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-user"></i>
                                 <p>
                                     Kullanıcı İşlemleri
@@ -76,19 +77,56 @@
                                 <li class="nav-item">
                                     <a href="/userlist" class="nav-link">
                                         <i class="fas fa-user-edit nav-icon"></i>
-                                        <p>Düzenle</p>
+                                        <p>Listele</p>
                                     </a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item menu-close">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Kategoriler
-                                    <span class="right badge badge-danger">New</span>
+                                    <i class="right fas fa-angle-left"></i>
                                 </p>
                             </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="/categoryadd" class="nav-link active">
+                                        <i class="fas fa-user-plus nav-icon"></i>
+                                        <p>Ekle</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/categorylist" class="nav-link">
+                                        <i class="fas fa-user-edit nav-icon"></i>
+                                        <p>Listele</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item menu-close">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Ürünler
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="/productadd" class="nav-link active">
+                                        <i class="fas fa-user-plus nav-icon"></i>
+                                        <p>Ekle</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/productlist" class="nav-link">
+                                        <i class="fas fa-user-edit nav-icon"></i>
+                                        <p>Listele</p>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </nav>

@@ -12,14 +12,26 @@ require __DIR__ . '/model.php';
 require __DIR__ . '/controller.php';
 require __DIR__. '/route.php';
 
-
+// Login ve Giriş Sayfası
 Route::run('/login', 'admin/login@index');
 Route::run('/login', 'admin/login@post', 'post' );
 Route::run('/admin', 'admin/home@index');
 Route::run('/logout', 'admin/login@logout');
+
+// Kullanıcı Sayfaları
 Route::run('/useradd', 'admin/user@add');
 Route::run('/usercreate', 'admin/user@create', 'post');
 Route::run('/useredit/{id}', 'admin/user@edit');
 Route::run('/userupdate', 'admin/user@update', 'post');
 Route::run('/userdelete/{id}', 'admin/user@delete');
 Route::run('/userlist', 'admin/user@list');
+
+// Kategori Sayfaları
+Route::run('/categoryadd', 'admin/category@add');
+Route::run('/categorylist', 'admin/category@list');
+Route::run('/categorycreate', 'admin/category@create', 'post');
+Route::run('/categoryedit/{id}', 'admin/category@edit');
+Route::run('/categoryupdate', 'admin/category@update', 'post');
+
+// Ürün Sayfaları
+Route::run('/productadd', 'admin/product@add');
