@@ -55,4 +55,8 @@ class Product extends Controller {
             'categoriesList' => $categoriesList
         ]);
     }
+
+    public function edit($id) {
+        $this->view('admin/productedit');
+    }
 }

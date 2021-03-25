@@ -37,3 +37,4 @@ Route::run('/categoryupdate', 'admin/category@update', 'post');
 Route::run('/productadd', 'admin/product@add');
 Route::run('/productcreate', 'admin/product@create', 'post');
 Route::run('/productlist', 'admin/product@list');
+Route::run('/productedit/{id}', 'admin/product@edit');
