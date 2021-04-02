@@ -9,7 +9,18 @@ $(document).ready(function () {
         if(beforeSelected != ''){
             $('.' + beforeSelected).css('display','none');
         }
-        $('.' + value).css('display','block');
+        if(beforeSelected = 'width-and-height-area'){
+            $('.width-and-height-area').css('display','none');
+            $('.height-area').css('display','none');
+            $('.width-area').css('display','none');
+        }
+        if(value == 'width-and-height-area'){
+            $('.width-and-height-area').css('display','block');
+            $('.height-area').css('display','block');
+            $('.width-area').css('display','block');
+        }else {
+            $('.' + value).css('display','block');
+        }
         beforeSelected = value;
     });
 })

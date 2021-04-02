@@ -29,7 +29,7 @@
                             </div>
                         <?php  }
                         ?>
-                        <form action="#" method="post">
+                        <form action="/calculationmethodlist" method="post">
                             <input class="form-control" type="text" placeholder="Kural Adı" name="name" required><br>
                             <div class="form-group">
                                 <label>Hesaplama Şekli</label>
@@ -38,12 +38,12 @@
                                     <option value="width-area">En</option>
                                     <option value="height-area">Boy</option>
                                     <option value="width-and-height-area">En x Boy</option>
-                                    <option value="cal">Miktar</option>
+                                    <option value="quantity">Miktar</option>
                                 </select>
                             </div><br>
 
                             <div class="width-area">
-                                <div class="card card-danger">
+                                <div class="card card-success">
                                     <div class="card-header">
                                         <h3 class="card-title">En</h3>
                                     </div>
@@ -109,7 +109,7 @@
                             </div>
 
                             <div class="height-area">
-                                <div class="card card-danger">
+                                <div class="card card-success">
                                     <div class="card-header">
                                         <h3 class="card-title">Boy</h3>
                                     </div>
@@ -175,7 +175,7 @@
                             </div>
 
                             <div class="width-and-height-area">
-                                <div class="card card-danger">
+                                <div class="card card-success">
                                     <div class="card-header">
                                         <h3 class="card-title">En x Boy</h3>
                                     </div>
@@ -244,6 +244,19 @@
                                     </div>
                                     <!-- /.card-body -->
                                 </div>
+                            </div>
+                            <div class="quantity">
+                                <div class="row">
+                                    <div class="col-12 d-flex">
+                                        <div class="col-6">
+                                            <label>Miktar</label>
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="number" value="0" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                             <label><strong>* İşlem Yapmamasını istediğiniz Yere 0 Yazın</strong></label><br>
                             <button type="submit" class="btn btn-success">Kaydet</button>

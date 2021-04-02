@@ -12,4 +12,9 @@ class Calculation extends Controller {
 
         $this->view('admin/calculationadd');
     }
+
+    public function list(){
+
+        $this->view('admin/calculationlist');
+    }
 }
