@@ -124,7 +124,7 @@
                         </li>
                         <li class="nav-item menu-close">
                             <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
+                                <i class="nav-icon fas fa-box"></i>
                                 <p>
                                     Ürünler
                                     <i class="right fas fa-angle-left"></i>
@@ -147,7 +147,7 @@
                         </li>
                         <li class="nav-item menu-close">
                             <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-user"></i>
+                                <i class="nav-icon fas fa-calendar"></i>
                                 <p>
                                     Hesaplama Yöntemleri
                                     <i class="right fas fa-angle-left"></i>
@@ -170,7 +170,7 @@
                         </li>
                         <li class="nav-item menu-close">
                             <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-user"></i>
+                                <i class="nav-icon fab fa-wpforms"></i>
                                 <p>
                                     Form
                                     <i class="right fas fa-angle-left"></i>

@@ -42,4 +42,9 @@ Route::run('/productedit/{id}', 'admin/product@edit');
 
 // Hesaplama Yöntemleri
 Route::run('/calculationmethodadd', 'admin/calculation@add');
-Route::run('/calculationmethodlist', 'admin/calculation@list', 'post');
+Route::run('/calculationmethodlistpost', 'admin/calculation@create', 'post');
+Route::run('/calculationmethodlist', 'admin/calculation@list');
+
+// Formlar
+
+Route::run('/formadd', 'admin/form@add');

@@ -29,7 +29,7 @@
                             </div>
                         <?php  }
                         ?>
-                        <form action="/calculationmethodlist" method="post">
+                        <form action="/calculationmethodlistpost" method="post">
                             <input class="form-control" type="text" placeholder="Kural Adı" name="name" required><br>
                             <div class="form-group">
                                 <label>Hesaplama Şekli</label>
