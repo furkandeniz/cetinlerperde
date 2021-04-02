@@ -32,6 +32,7 @@ Route::run('/categorylist', 'admin/category@list');
 Route::run('/categorycreate', 'admin/category@create', 'post');
 Route::run('/categoryedit/{id}', 'admin/category@edit');
 Route::run('/categoryupdate', 'admin/category@update', 'post');
+Route::run('/categorydelete/{id}', 'admin/category@delete');
 
 // Ürün Sayfaları
 Route::run('/productadd', 'admin/product@add');

@@ -12,12 +12,14 @@ class Categories extends Model {
         return $this->db->query('SELECT * FROM categories WHERE status = 1')->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function getAllActive() {
+        return $this->db->query('SELECT * FROM categories WHERE status = 1 and active = 1')->fetchAll(PDO::FETCH_ASSOC);
+    }
+
     public function getId($id) {
         $response = NULL;
-        $query = $this->db->prepare('SELECT * FROM categories WHERE status = 1 and id = :cid');
-        $query->execute(array(
-            'cid' => $id
-        ));
+        $query = $this->db->prepare('SELECT * FROM categories WHERE status = 1');
+        $query->execute();
         if($query->rowCount()) {
             foreach ($query as $row) {
                 $response['name'] = $row['name'];
@@ -48,6 +50,14 @@ class Categories extends Model {
             'ccode' => $categoryCode,
             'cactive' => $categoryActive,
             'cid' => $categoryId
+        ));
+    }
+
+    public function delete($id) {
+        $query = $this->db->prepare('UPDATE categories SET status = :cstatus WHERE id = :cid');
+        $delete = $query->execute(array(
+            'cstatus' => 0,
+            'cid' => $id
         ));
     }
 }

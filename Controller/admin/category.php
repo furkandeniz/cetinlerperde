@@ -50,4 +50,10 @@ class Category extends Controller {
             header('Location: categorylist');
         }
     }
+
+    public function delete($id) {
+        $category = $this->model('categories');
+        $delete = $category->delete($id);
+        header('Location: /categorylist');
+    }
 }

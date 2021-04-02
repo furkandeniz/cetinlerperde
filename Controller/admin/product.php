@@ -10,7 +10,7 @@ class Product extends Controller {
 
     public function add() {
         $categories = $this->model('categories');
-        $categoriesList = $categories->getAll();
+        $categoriesList = $categories->getAllActive();
         $this->view('admin/productadd',[
             'categories' => $categoriesList
         ]);
@@ -57,6 +57,16 @@ class Product extends Controller {
     }
 
     public function edit($id) {
-        $this->view('admin/productedit');
+        $product = $this->model('products');
+        $productList = $product->getId($id);
+        $category = $this->model('categories');
+        $categoryList = $category->getAll();
+        $categoriesinproduct = $this->model('categoriesinproduct');
+        $selectedCategories = $categoriesinproduct->getId($id);
+        $this->view('admin/productedit',[
+            'productList' => $productList,
+            'categoryList' => $categoryList,
+            'selectedCategories' => $selectedCategories
+        ]);
     }
 }
