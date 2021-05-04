@@ -216,6 +216,7 @@
                                 </div>
                             <?php }
                             ?>
+                            <!-- Ürünü güncellemiyor yeni ürün ekliyor. -->
                             <form action="/productcreate" method="post">
                                 <input class="form-control form-control-lg" type="text" placeholder="Ürün Adı" value="<?= $productList['name']?>"
                                        name="product_name" required><br>
@@ -223,11 +224,16 @@
                                     <label>Kategori</label>
                                     <div class="row">
                                         <?php foreach ($categoryList as $category) { ?>
+
                                             <div class="col-4">
                                                 <input type="checkbox" id="<?= $category['id'] ?>" name="category_id[]"
-                                                       value="<?= $category['id'] ?>" <?php if ($category['id'] == $selectedCategories['category_id']){ ?> checked="checked" <?php } ?>>
+                                                       value="<?= $category['id'] ?>"
+                                                    <?php foreach ($selectedCategories as $deneme) { ?>
+                                                    <?php if ($productList['id'] == $deneme['product_id']) {?>
+                                                    <?php if ($category['id'] == $deneme['category_id']){ ?> checked="checked" <?php } } } ?>>
                                                 <label for="<?= $category['id'] ?>"><?= $category['name'] ?> </label><br>
                                             </div>
+
                                         <?php } ?>
                                     </div>
                                     <br>

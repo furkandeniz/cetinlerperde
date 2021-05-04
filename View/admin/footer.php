@@ -30,7 +30,7 @@
 <script src="Assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="Assets/dist/js/adminlte.min.js"></script>
-<script src="Assets/custom.js?v=2"></script>
+<script src="Assets/custom.js?v=2.1.4"></script>
 
 </body>
 </html>

@@ -62,7 +62,7 @@ class Product extends Controller {
         $category = $this->model('categories');
         $categoryList = $category->getAll();
         $categoriesinproduct = $this->model('categoriesinproduct');
-        $selectedCategories = $categoriesinproduct->getId($id);
+        $selectedCategories = $categoriesinproduct->getAll();
         $this->view('admin/productedit',[
             'productList' => $productList,
             'categoryList' => $categoryList,

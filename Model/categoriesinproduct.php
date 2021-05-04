@@ -14,7 +14,7 @@ class CategoriesInProduct extends Model {
 
     public function getId($id) {
         $response = NULL;
-        $query = $this->db->prepare('SELECT * FROM categories_in_product WHERE product_id = :pid');
+        $query = $this->db->prepare('SELECT * FROM categories_in_product WHERE product_id = :pid' );
         $query->execute(array(
             'pid' => $id
         ));

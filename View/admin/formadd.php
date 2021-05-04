@@ -21,7 +21,7 @@
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col-10">
                         <?php
                         if(isset($message)){ ?>
                             <div class="alert alert-danger" role="alert">
@@ -30,24 +30,27 @@
                         <?php  }
                         ?>
                         <form action="/categorycreate" method="post">
-                            <input class="form-control" type="text" placeholder="Form Adı" name="form_name" required><br>
-                            <div class="form-group">
-                                <label>Hesaplama Şekli</label>
-                                <select class="form-control" name="hesaplama-yontemi" id="hesaplama-yontemi">
-                                    <option value="-1">Seçiniz</option>
-                                    <option value="width-area">Stor Perde</option>
-                                    <option value="height-area">Tül Perde</option>
-                                    <option value="width-and-height-area">Zebra Perde</option>
-                                </select>
+                            <div class="form-add-button">
+                                <input class="form-control" type="text" placeholder="Form Adı" name="form_name" required><br>
                             </div><br>
                             <button type="submit" class="btn btn-success">Kaydet</button>
                         </form>
+                    </div>
+                    <div class="col-2">
+                        <a class="btn btn-app input-insert">
+                            <i class="fas fa-plus"></i> Ekle
+                        </a>
+
+                        <a class="btn btn-app input-delete">
+                            <i class="fas fa-minus"></i> Sil
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <?php include 'footer.php'; ?>
+
 <?php }else{
     header('Location: /login');
 }
