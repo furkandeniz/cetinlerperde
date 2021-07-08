@@ -12,4 +12,14 @@ class Form extends Controller{
 
         $this->view('admin/formadd');
     }
+
+    public function list(){
+
+        $this->view('admin/formlist');
+    }
+
+    public function createOrder() {
+
+        $this->view('admin/createorder');
+    }
 }

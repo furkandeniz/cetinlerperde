@@ -2,6 +2,7 @@
  * Created by furka on 21.03.2021.
  */
 $(document).ready(function () {
+
     var beforeSelected = '';
     $('#method').on('change', function(){
 
@@ -24,13 +25,27 @@ $(document).ready(function () {
         beforeSelected = value;
     });
 
-    var input = '<div class="col-12 d-flex new-input"><div class="col-4"><input class="form-control" type="text" placeholder="Hücre Adı" name="form_name" required></div><div class="col-4"><select class="custom-select"><option value="ürün">Ürün</option><option value="adet">Adet</option><option value="en">En</option><option value="boy">Boy</option><option value="Yön">Yön</option><option value="secim">Seçim</option><option value="tek-satir">Tek Satır</option></select></div></div><br>';
+    var input = '<div class="col-12 d-flex new-input"><div class="col-4"><input class="form-control" type="text" placeholder="Hücre Adı" name="form_name" required></div><div class="col-4"><select class="custom-select"><option value="ürün">Ürün</option><option value="adet">Adet</option><option value="en">En</option><option value="boy">Boy</option><option value="Yön">Yön</option><option value="secim">Seçim</option><option value="tek-satir">Tek Satır</option><option value="coklu-satir">Çoklu Satır</option></select></div></div><br>';
     $('.input-insert').click(function(){
         $('.form-add-button').append(input);
+        var selectArea = "ürün";
+        var textarea = '<div class="col-12 d-flex custom-textarea"><textarea style="width: 100%;"></textarea></div><br>';
+        var selectInput = '<div class="col-12 d-flex custom-textarea"><input class="form-control select-input"></input></div><br>';
+        $('.custom-select').on('change',function(){
+            selectArea = $('.custom-select').val();
+            if(selectArea == "coklu-satir") {
+                $('.form-add-button').append(textarea);
+            }else {
+                if(selectArea != "ürün") {
+                    $('.form-add-button').append(selectInput);
+                }
+            }
+        });
     });
 
     $('.input-delete').click(function(){
         $('.new-input:last-of-type').remove();
+        $('.custom-textarea:last-of-type').remove();
         $('.form-add-button br:last-of-type').remove();
     });
 

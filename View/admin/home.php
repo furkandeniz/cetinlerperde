@@ -19,11 +19,11 @@
                             <table class="table table-head-fixed text-nowrap">
                                 <thead>
                                 <tr>
-                                    <th>ID</th>
-                                    <th>User</th>
-                                    <th>Date</th>
-                                    <th>Status</th>
-                                    <th>Reason</th>
+                                    <th>Sipariş Adı</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th>Durumu</th>
+                                    <th>Tarih</th>
                                 </tr>
                                 </thead>
                                 <tbody>

@@ -176,7 +176,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     <p>Ekle</p>
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a href="/formlist" class="nav-link">
+                                    <i class="fas fa-user-edit nav-icon"></i>
+                                    <p>Listele</p>
+                                </a>
+                            </li>
                         </ul>
+                    </li>
+                    <li class="nav-item menu-close">
+                        <a href="/createorder" class="nav-link">
+                            <i class="nav-icon fab fa-wpforms"></i>
+                            <p>
+                                Sipariş oluştur
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
                     </li>
                 </ul>
             </nav>

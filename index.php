@@ -48,3 +48,5 @@ Route::run('/calculationmethodlist', 'admin/calculation@list');
 // Formlar
 
 Route::run('/formadd', 'admin/form@add');
+Route::run('/formlist', 'admin/form@list');
+Route::run('/createorder', 'admin/form@createOrder');
