@@ -32,25 +32,19 @@
                                     <tr>
                                         <th>İsim</th>
                                         <th>Durumu</th>
+                                        <th>Yöntem</th>
                                         <th>Düzenle</th>
                                     </tr>
                                     </thead>
                                     <tbody>
+                                    <?php foreach ($calculationsList as $calculationList){ ?>
                                         <tr>
-                                            <td>Stor Perde</td>
-                                            <td>Aktif</td>
+                                            <td><?php echo $calculationList['rule_name']; ?></td>
+                                            <td><?php if ($calculationList['status'] == "1"){ echo 'Aktif';} else { echo 'Pasif'; } ?></td>
+                                            <td><?php echo $calculationList['form_of_calculation']; ?></td>
                                             <td><a href="#" class="btn btn-info">Düzenle</a></td>
                                         </tr>
-                                        <tr>
-                                            <td>Tül Perde</td>
-                                            <td>Aktif</td>
-                                            <td><a href="#" class="btn btn-info">Düzenle</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Zebra Perde</td>
-                                            <td>Pasif</td>
-                                            <td><a href="#" class="btn btn-info">Düzenle</a></td>
-                                        </tr>
+                                    <?php } ?>
                                     </tbody>
                                 </table>
                             </div>

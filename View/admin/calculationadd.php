@@ -35,10 +35,10 @@
                                 <label>Hesaplama Şekli</label>
                                 <select class="form-control" name="method" id="method">
                                     <option value="-1">Seçiniz</option>
-                                    <option value="width-area">En</option>
-                                    <option value="height-area">Boy</option>
-                                    <option value="width-and-height-area">En x Boy</option>
-                                    <option value="quantity">Miktar</option>
+                                    <option value="en">En</option>
+                                    <option value="boy">Boy</option>
+                                    <option value="en x boy">En x Boy</option>
+                                    <option value="miktar">Miktar</option>
                                 </select>
                             </div><br>
 
@@ -87,7 +87,7 @@
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text">W1</span>
                                                     </div>
-                                                    <input type="number" value="0" class="form-control">
+                                                    <input type="number" value="0" class="form-control" name="w1">
                                                     <div class="input-group-append">
                                                         <span class="input-group-text">cm</span>
                                                     </div>
@@ -96,7 +96,7 @@
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text">W2</span>
                                                     </div>
-                                                    <input class="form-control" type="number" value="0">
+                                                    <input class="form-control" type="number" value="0" name="w2">
                                                     <div class="input-group-append">
                                                         <span class="input-group-text">cm</span>
                                                     </div>
@@ -153,7 +153,7 @@
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text">H1</span>
                                                     </div>
-                                                    <input type="number" value="0" class="form-control">
+                                                    <input type="number" value="0" class="form-control" name="h1">
                                                     <div class="input-group-append">
                                                         <span class="input-group-text">cm</span>
                                                     </div>
@@ -162,7 +162,7 @@
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text">H2</span>
                                                     </div>
-                                                    <input type="number" value="0" class="form-control">
+                                                    <input type="number" value="0" class="form-control" name="h2">
                                                     <div class="input-group-append">
                                                         <span class="input-group-text">cm</span>
                                                     </div>
@@ -186,7 +186,7 @@
                                                     <label>Minimum En x Boy</label>
                                                 </div>
                                                 <div class="col-6">
-                                                    <input class="form-control" type="number" value="0" placeholder="Minimum En x Boy" name="min-height"><br>
+                                                    <input class="form-control" type="number" value="0" placeholder="Minimum En x Boy" name="wh-min-height"><br>
                                                 </div>
                                             </div>
                                             <div class="col-12 d-flex">
@@ -194,7 +194,7 @@
                                                     <label>En x Boy Artışı</label>
                                                 </div>
                                                 <div class="col-6">
-                                                    <input class="form-control" type="number" value="0" placeholder="En x Boy Artışı" name="height-increase"><br>
+                                                    <input class="form-control" type="number" value="0" placeholder="En x Boy Artışı" name="wh-height-increase"><br>
                                                 </div>
                                             </div>
                                             <div class="col-12">
@@ -205,7 +205,7 @@
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text">W1</span>
                                                     </div>
-                                                    <input type="number" value="0" class="form-control">
+                                                    <input type="number" value="0" class="form-control" name="wh-w1">
                                                     <div class="input-group-append">
                                                         <span class="input-group-text">cm</span>
                                                     </div>
@@ -214,7 +214,7 @@
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text">H1</span>
                                                     </div>
-                                                    <input type="number" value="0" class="form-control">
+                                                    <input type="number" value="0" class="form-control" name="wh-h1">
                                                     <div class="input-group-append">
                                                         <span class="input-group-text">cm</span>
                                                     </div>
@@ -225,7 +225,7 @@
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text">W2</span>
                                                     </div>
-                                                    <input type="number" value="0" class="form-control">
+                                                    <input type="number" value="0" class="form-control" name="wh-w2">
                                                     <div class="input-group-append">
                                                         <span class="input-group-text">cm</span>
                                                     </div>
@@ -234,7 +234,7 @@
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text">H2</span>
                                                     </div>
-                                                    <input type="number" value="0" class="form-control">
+                                                    <input type="number" value="0" class="form-control" name="wh-h2">
                                                     <div class="input-group-append">
                                                         <span class="input-group-text">cm</span>
                                                     </div>
@@ -252,7 +252,7 @@
                                             <label>Miktar</label>
                                         </div>
                                         <div class="col-6">
-                                            <input type="number" value="0" class="form-control">
+                                            <input type="number" value="0" class="form-control" name="amount-number">
                                         </div>
                                     </div>
                                 </div>
