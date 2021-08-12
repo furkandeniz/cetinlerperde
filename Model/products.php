@@ -12,6 +12,10 @@ class Products extends Model {
         return $this->db->query('SELECT * FROM products WHERE status = 1')->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function getAllActive() {
+        return $this->db->query('SELECT * FROM products WHERE status = 1 and active = 1')->fetchAll(PDO::FETCH_ASSOC);
+    }
+
     public function getId($id) {
         $response = NULL;
         $query = $this->db->prepare('SELECT * FROM products WHERE id = :pid');

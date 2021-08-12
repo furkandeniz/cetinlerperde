@@ -35,10 +35,10 @@
                                 <label>Hesaplama Şekli</label>
                                 <select class="form-control" name="method" id="method">
                                     <option value="-1">Seçiniz</option>
-                                    <option value="en">En</option>
-                                    <option value="boy">Boy</option>
-                                    <option value="en x boy">En x Boy</option>
-                                    <option value="miktar">Miktar</option>
+                                    <option value="width-area">En</option>
+                                    <option value="height-area">Boy</option>
+                                    <option value="width-and-height-area">En x Boy</option>
+                                    <option value="quantity">Miktar</option>
                                 </select>
                             </div><br>
 

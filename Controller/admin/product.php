@@ -69,4 +69,11 @@ class Product extends Controller {
             'selectedCategories' => $selectedCategories
         ]);
     }
+
+    public function getProductListWithAjax() {
+        $product = $this->model('products');
+        $productList = $product->getAllActive();
+        $productList = json_encode($productList);
+        echo $productList;
+    }
 }
